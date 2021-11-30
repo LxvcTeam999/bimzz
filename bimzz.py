@@ -9,25 +9,23 @@ import time
 import sys
 
 #tampilan
-x = "KyTeam"
-y = "BimzzDDOS"
-
-def login():
-  user = int(input("Masukkan Username: "))
-  pasw = int(input("Masukkan Password: "))
-  if user ==x and pasw ==y:
-    print("[Bimzz] Succes Login")
-    time.sleep(2)
-  else:
-    print("[Bimzz] Username/Password Salah!!")
-    time.sleep(2)
-    
-if __name__ == "__main__":
-  print("""\u001b[31m
-  [Bimzz] ==> LoginMenu!!""")
-  login()
-  
-#ddos
+password ="BimzzDDOS"
+print("""\u001b[31m
+[Bimzz] ==> LoginMenu!!""")
+for i in range(3):
+	pwd = input("[•] PASSWORD: ")
+	j=3
+	if(pwd==password):
+		time.sleep(5)
+		print("[•] TUNGGU 5 DETIK!!! ")
+		break
+	else:
+		time.sleep(5)
+		print("[×] PASSWORD SALAH!!! ")
+		continue
+time.sleep(5)
+print("[√] Berhasil Login, Wait")
+time.sleep(5)
 print("------------------------------------------------")
 print("[+] Tools DDoS BETA VERSION By Bimzz")
 print("[+] Discord : KyBimzZ  び#1716")
